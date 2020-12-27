@@ -1,21 +1,44 @@
 /* ##################################   */
-/*                  ROOT                */
+/*             Root and Theme           */
 /* ##################################   */
 :root {
-  --green: #00FF00;
-  --white: #ffffff;
-  --black: #000000;
+	/*Colors for Light Theme */
+	--lightColorOne: #EEEEEE;
+	--lightColorTwo: #AEC3B0;
+	--lightColorThree: #598392;
+	--lightColorFour: #124559;
+	--lightColorFive: #111111;
+
+	/*Colors for Dark Theme */
+	--darkColorOne: #111111;
+	--darkColorTwo: #124559;
+	--darkColorThree: #598392;
+	--darkColorFour: #AEC3B0;
+	--darkColorFive: #EEEEEE;
+}
+
+.light-theme {
+  --colorOne: var(--lightColorOne);
+  --colorTwo: var(--lightColorTwo);
+  --colorThree: var(--lightColorThree);
+  --colorFour: var(--lightColorFour);
+	--colorFive: var(--lightColorFive);
+}
+
+.dark-theme {
+  --colorOne: var(--darkColorOne);
+  --colorTwo: var(--darkColorTwo);
+  --colorThree: var(--darkColorThree);
+  --colorFour: var(--darkColorFour);
+	--colorFive: var(--darkColorFive);
 }
 /* ##################################   */
 /*                 INIT                 */
 /* ##################################   */
 * {
-  color: var(--fontColor);
+  color: var(--colorFive);
   font-family: helvetica;
-}
-
-body {
-    background: var(--bg);
+	background: var(--colorOne);
 }
 ul {
     font-family: helvetica;
@@ -23,27 +46,8 @@ ul {
 li {
   list-style: circle;
 }
-
 .list {
   list-style: square;
-}
-
-/* ##################################   */
-/*                THEMES                */
-/* ##################################   */
-
-.light-theme {
-  --bg: var(--green);
-  --fontColor: var(--black);
-  --btnBg: var(--black);
-  --btnFontColor: var(--white);
-}
-
-.dark-theme {
-  --bg: var(--black);
-  --fontColor: var(--green);
-  --btnBg: var(--white);
-  --btnFontColor: var(--black);
 }
 
 /* ##################################   */
