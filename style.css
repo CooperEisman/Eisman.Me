@@ -2,66 +2,41 @@
 /*             Root and Theme           */
 /* ##################################   */
 :root {
-	/*Colors for Light Theme */
-	--lightColorOne: #EEEEEE;
-	--lightColorTwo: #AEC3B0;
-	--lightColorThree: #598392;
-	--lightColorFour: #124559;
-	--lightColorFive: #111111;
+	/*Backround Colors*/
+    --color_back: #1f1f1f;
+    --color_backTwo: #333333;
+    --color_backThree: #464646;
 
-	/*Colors for Dark Theme */
-	--darkColorOne: #111111;
-	--darkColorTwo: #124559;
-	--darkColorThree: #598392;
-	--darkColorFour: #AEC3B0;
-	--darkColorFive: #EEEEEE;
-}
+    /*Accent Colors*/
+    --color_accent: #111e1b;
+    --color_accentTwo: #13211e;
 
-.light-theme {
-  --colorOne: var(--lightColorOne);
-  --colorTwo: var(--lightColorTwo);
-  --colorThree: var(--lightColorThree);
-  --colorFour: var(--lightColorFour);
-	--colorFive: var(--lightColorFive);
+    /*Highlight Colors*/
+    --color_highlight: #5b9a8d;
+    --color_highlightTwo: #3d5d56;
 }
 
-.dark-theme {
-  --colorOne: var(--darkColorOne);
-  --colorTwo: var(--darkColorTwo);
-  --colorThree: var(--darkColorThree);
-  --colorFour: var(--darkColorFour);
-	--colorFive: var(--darkColorFive);
-}
-/* ##################################   */
-/*                 INIT                 */
-/* ##################################   */
-* {
-  color: var(--colorFive);
-  font-family: helvetica;
-	background: var(--colorOne);
-}
-ul {
-    font-family: helvetica;
-}
-li {
-  list-style: circle;
-}
-.list {
-  list-style: square;
+body {
+    background-color: var(--color_back);
 }
 
-/* ##################################   */
-/*                Items                 */
-/* ##################################   */
-.btn {
-  position: absolute;
-  top: 20px;
-  left: 250px;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  border: none;
-  color: var(--btnFontColor);
-  background-color: var(--btnBg);
+header {
+    color: var(--color_highlight);
+    font-size: xxx-large;
+    font-family: "Times New Roman";
+
 }
-.btn:focus { outline-style: none; }
+
+h1   {
+    color: var(--color_accentTwo);
+}
+
+p    {
+    color: var(--color_highlight);
+}
+
+
+header {
+    color: var(--color_accent)
+}
+
